@@ -4,10 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/course.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>course</title>
   </head>
 
   <body>
+     <!-- <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <a href="index.html" class="nav-logo">
+            <img
+              src="./assets/images/photo_2025-12-07_22-28-32.jpg"
+              alt="logo image"
+            />
+          </a>
+
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="quizzes.html">Quizzes</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <a href="login.html" class="btn btn-outline">Login</a>
+          <a href="signup.html" class="btn">Sign Up</a>
+        </div>
+
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>  -->
     <div class="main-container">
       <div class="intro-section">
         <h3 class="intro-title">Online Courses on Design and Development</h3>
@@ -17,6 +50,7 @@
           cum provident ipsa, minima.
         </p>
       </div>
+      <!----------------- section one-------------------------->
 
       <div class="courses-wrapper">
         <!-- SINGLE COURSE CARD -->
@@ -29,7 +63,9 @@
                 Learn the basics of HTML, CSS, and responsive design principles.
               </p>
             </div>
-            <button class="view-btn">View Course</button>
+            <a href="courseopen.html?id=web-design">
+              <button id="webDesign" class="view-btn">View Course</button>
+            </a>
           </div>
 
           <!-- Images + Metadata -->
@@ -51,33 +87,212 @@
 
           <!-- Curriculum -->
           <div class="curriculum">
-            <p class="curriculum-title">Curriculum</p>
+            <div class="curriculum-header">
+              <p class="curriculum-title">Curriculum</p>
+            </div>
 
             <hr />
             <div class="curriculum-list">
               <div class="curriculum-item">
-                <h3>01</h3>
-                <h4>Introduction to HTML</h4>
+                <div>
+                  <h3>01</h3>
+                  <h4>Introduction to HTML</h4>
+                </div>
+                <p class="vertical-line"></p>
               </div>
 
               <div class="curriculum-item">
-                <h3>02</h3>
-                <h4>Styling with CSS</h4>
+                <div>
+                  <h3>02</h3>
+                  <h4>Styling with CSS</h4>
+                </div>
+                <p class="vertical-line"></p>
+              </div>
+              <div class="curriculum-item">
+                <div>
+                  <h3>03</h3>
+                  <h4>Responsive Design Basics</h4>
+                </div>
+                <p class="vertical-line"></p>
+              </div>
+              <div class="curriculum-item">
+                <div>
+                  <h3>04</h3>
+                  <h4>Design Principles for Web</h4>
+                </div>
+                <p class="vertical-line"></p>
+              </div>
+              <div class="curriculum-item" id="last-item">
+                <div>
+                  <h3>05</h3>
+                  <h4>Building a Basic Website</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!----------------- section two -------------------->
+
+      <div class="courses-wrapper">
+        <!-- SINGLE COURSE CARD -->
+        <section class="course-card">
+          <!-- Top Title + Button -->
+          <div class="course-header">
+            <div class="course-texts">
+              <h3 class="course-name">UX/UI Design</h3>
+              <p class="course-subtitle">
+                Learn the basics of HTML, CSS, and responsive design principles.
+              </p>
+            </div>
+            <a  href="courseopen.html?id=ui-ux">
+              <button  class="view-btn">View Course</button>
+            </a>
+          </div>
+
+          <!-- Images + Metadata -->
+          <div class="course-preview">
+            <div class="course-images">
+              <img src="/assets/images/design1.jpg" alt="design" />
+              <img src="/assets/images/design2.jpg" alt="design" />
+              <img src="/assets/images/design3.jpg" alt="design" />
+            </div>
+            <div class="course-status">
+              <div class="course-meta">
+                <span class="meta-item">6 Weeks</span>
+                <span class="meta-item">Intermediate</span>
+              </div>
+
+              <p class="course-author">By Chala Folle </p>
+            </div>
+          </div>
+
+          <!-- Curriculum -->
+          <div class="curriculum">
+            <div class="curriculum-header">
+              <p class="curriculum-title">Curriculum</p>
+            </div>
+
+            <hr />
+            <div class="curriculum-list">
+              <div class="curriculum-item">
+                <div>
+                  <h3>01</h3>
+                  <h4>Introduction to HTML</h4>
+                </div>
+                <p class="vertical-line"></p>
               </div>
 
               <div class="curriculum-item">
-                <h3>03</h3>
-                <h4>Responsive Design Basics</h4>
+                <div>
+                  <h3>02</h3>
+                  <h4>Styling with CSS</h4>
+                </div>
+                <p class="vertical-line"></p>
+              </div>
+              <div class="curriculum-item">
+                <div>
+                  <h3>03</h3>
+                  <h4>Responsive Design Basics</h4>
+                </div>
+                <p class="vertical-line"></p>
+              </div>
+              <div class="curriculum-item">
+                <div>
+                  <h3>04</h3>
+                  <h4>Design Principles for Web</h4>
+                </div>
+                <p class="vertical-line"></p>
+              </div>
+              <div class="curriculum-item" id="last-item">
+                <div>
+                  <h3>05</h3>
+                  <h4>Building a Basic Website</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!--------------- section three ------------------->
+
+      <div class="courses-wrapper">
+        <!-- SINGLE COURSE CARD -->
+        <section class="course-card">
+          <!-- Top Title + Button -->
+          <div class="course-header">
+            <div class="course-texts">
+              <h3 class="course-name">Mobile app development</h3>
+              <p class="course-subtitle">
+                Learn the basics of HTML, CSS, and responsive design principles.
+              </p>
+            </div>
+            <a href="courseopen.html?id=mobile-dev">
+              <button id="mobileApp" class="view-btn">View Course</button>
+            </a>
+          </div>
+
+          <!-- Images + Metadata -->
+          <div class="course-preview">
+            <div class="course-images">
+              <img src="/assets/images/design1.jpg" alt="design" />
+              <img src="/assets/images/design2.jpg" alt="design" />
+              <img src="/assets/images/design3.jpg" alt="design" />
+            </div>
+            <div class="course-status">
+              <div class="course-meta">
+                <span class="meta-item">5 Weeks</span>
+                <span class="meta-item">Beginner</span>
+              </div>
+
+              <p class="course-author">By James William </p>
+            </div>
+          </div>
+
+          <!-- Curriculum -->
+          <div class="curriculum">
+            <div class="curriculum-header">
+              <p class="curriculum-title">Curriculum</p>
+            </div>
+
+            <hr />
+            <div class="curriculum-list">
+              <div class="curriculum-item">
+                <div>
+                  <h3>01</h3>
+                  <h4>Introduction to HTML</h4>
+                </div>
+                <p class="vertical-line"></p>
               </div>
 
               <div class="curriculum-item">
-                <h3>04</h3>
-                <h4>Design Principles for Web</h4>
+                <div>
+                  <h3>02</h3>
+                  <h4>Styling with CSS</h4>
+                </div>
+                <p class="vertical-line"></p>
               </div>
-
               <div class="curriculum-item">
-                <h3>05</h3>
-                <h4>Building a Basic Website</h4>
+                <div>
+                  <h3>03</h3>
+                  <h4>Responsive Design Basics</h4>
+                </div>
+                <p class="vertical-line"></p>
+              </div>
+              <div class="curriculum-item">
+                <div>
+                  <h3>04</h3>
+                  <h4>Design Principles for Web</h4>
+                </div>
+                <p class="vertical-line"></p>
+              </div>
+              <div class="curriculum-item" id="last-item">
+                <div>
+                  <h3>05</h3>
+                  <h4>Building a Basic Website</h4>
+                </div>
               </div>
             </div>
           </div>

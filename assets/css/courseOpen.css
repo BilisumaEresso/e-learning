@@ -1,0 +1,222 @@
+/* ===============================
+   GLOBAL
+==================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f7f7f7;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+div {
+  width: 100%;
+  max-width: 1050px;
+}
+hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 30px 0;
+}
+
+/* ===============================
+   COURSE TITLE + DESCRIPTION
+==================================*/
+
+.course-wellcome {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.course-title h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.welcome-message p {
+  max-width: 650px;
+  line-height: 1.6;
+  color: #555;
+  font-size: 15px;
+}
+
+/* ===============================
+   INTRO IMAGE
+==================================*/
+
+.intro-image {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.intro-image img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+/* ===============================
+   GRID WRAPPER FOR ALL CARDS
+==================================*/
+
+.course-detail-cards {
+  margin-top: 20px;
+}
+
+/* 2-column layout */
+.cousre-section-1,
+.cousre-section-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-bottom: 25px;
+}
+.topic-item-container {
+  flex: 1;
+}
+/* ================================
+   UPDATED — SECTION 3 ALSO 2-COLS
+===================================*/
+.cousre-section-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* FIXED: was 1fr */
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+/* ===============================
+   COURSE SECTION CARD
+==================================*/
+
+.topicOne,
+.topicTwo,
+.topicThree,
+.topicFour,
+.topicFive {
+  background: #fff;
+  padding: 25px 25px;
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.topicOne,
+.topicTwo,
+.topicThree,
+.topicFour,
+.topicFive {
+  display: flex;
+  flex-direction: column;
+}
+
+.course-topic-no {
+  display: flex;
+  font-size: 42px;
+  font-weight: 700;
+  color: #111;
+  opacity: 0.9;
+  /* margin-bottom: 5px; */
+  align-self: flex-end; /* This moves it to the right-most */
+}
+
+.courseLink p:hover {
+  /* background-color: #111; */
+  color: #625555;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+.course-topic {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ===============================
+   TOPIC ITEMS
+==================================*/
+
+.topic-item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 12px;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.topic-item {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  max-width: 320px;
+  line-height: 1.4;
+}
+
+.lesson-no {
+  font-size: 12px;
+  color: #777;
+  margin-top: 4px;
+}
+
+.course-length {
+  max-width: 100px; /* fixed width */
+  /* flex-shrink: 0;         */
+  text-align: center; /* optional: aligns text nicely */
+}
+
+.course-length p {
+  font-size: 13px;
+  background: #f0f0f0;
+  padding: 5px;
+  border-radius: 6px;
+  color: #333;
+  font-weight: 500;
+  /* white-space: nowrap; */
+}
+
+/* Highlighted “1 Hour” */
+/* .course-length p:nth-child(1):contains("1 hour"),
+.course-length p:nth-child(1):contains("1 Hour") {
+  background: #fff4db;
+  border: 1px solid #ffcc80;
+  color: #c47b00;
+} */
+
+/* ===============================
+   RESPONSIVE
+==================================*/
+
+@media (max-width: 900px) {
+  .cousre-section-1,
+  .cousre-section-2,
+  .cousre-section-3 {
+    /* NOW ALSO STACKS ON MOBILE */
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .topic-item-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  /* .course-length p {
+    align-self: flex-end;
+  } */
+}

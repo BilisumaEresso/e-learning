@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Inter", sans-serif; */
+}
+
+body {
+  background: #f7f7f8;
+  padding: 40px;
+}
+hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 30px 0;
+}
+.container {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+/* ================= LEFT SIDE ================= */
+.left {
+  width: 55%;
+  margin-top: 70px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  width: 85%;
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  line-height: 22px;
+}
+
+.testimonial-card {
+  width: 95%;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+}
+
+.testimonial-text {
+  font-size: 15px;
+  line-height: 23px;
+  margin-bottom: 25px;
+}
+
+.testimonial-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.read-btn {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.arrows {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.arrow-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* ================= RIGHT SIDE ================= */
+
+.right {
+  width: 40%;
+}
+
+.login-card {
+  background: #fff;
+  padding: 35px;
+  border-radius: 16px;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.login-card h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.login-subtitle {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 22px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.forgot-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.remember {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.forgot-link {
+  font-size: 13px;
+}
+
+.login-btn {
+  width: 100%;
+  background: #007bff;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.divider {
+    display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  font-weight: bold;
+  opacity: 0.4;
+}
+
+.divider hr {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;  
+}
+
+.divider span {
+  color: #555;
+  margin: 0 10px;
+}
+
+.google-btn {
+  width: 100%;
+  background: #f6f6f6;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google-btn img {
+  width: 18px;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-text a {
+  font-weight: 600;
+}
