@@ -191,7 +191,7 @@ hr{
 
 }
 .vertical-line {
-    margin: 5px;
+    /* margin: 5px; */
     width: 1px;
     background: #e0e0e0;
 }
